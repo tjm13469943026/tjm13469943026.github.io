@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-11-21T09:58:25.000Z</updated>
+  <updated>2016-11-22T01:36:32.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>这是在2016年11月22日的一天</title>
+    <link href="http://yoursite.com/2016/11/22/%E8%BF%99%E6%98%AF%E5%9C%A82016%E5%B9%B411%E6%9C%8822%E6%97%A5%E7%9A%84%E4%B8%80%E5%A4%A9/"/>
+    <id>http://yoursite.com/2016/11/22/这是在2016年11月22日的一天/</id>
+    <published>2016-11-22T01:32:49.000Z</published>
+    <updated>2016-11-22T01:36:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>   今天家里下雨夹雪了，这就是天气给人带来的喜悦吧！还好有在这里能听到家里那边的声音，很开心。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;   今天家里下雨夹雪了，这就是天气给人带来的喜悦吧！还好有在这里能听到家里那边的声音，很开心。&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>new</title>
