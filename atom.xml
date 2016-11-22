@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-11-22T02:14:16.000Z</updated>
+  <updated>2016-11-22T02:49:45.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Markdown的使用</title>
+    <link href="http://yoursite.com/2016/11/22/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2016/11/22/Markdown的使用/</id>
+    <published>2016-11-22T02:33:09.000Z</published>
+    <updated>2016-11-22T02:49:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>标题：用#号 </p>
+<p>这是最为常用的格式，在平时常用的的文本编辑器中大多是这样实现的：输入文本、选中文本、设置标题格式。</p>
+<p>列表<br>列表格式也很常用，在 Markdown 中，你只需要在文字前面加上 - 就可以了</p>
+<p>在 Markdown 中，插入图片不需要其他按钮，你只需要使用感叹号 <img src="" alt=""> 这样的语法即可，</p>
+<p>引用<br>在我们写作的时候经常需要引用他人的文字，这个时候引用这个格式就很有必要了，在 Markdown 中，你只需要在你希望引用的文字前面加上 &gt; 就好了</p>
+<p>粗体和斜体<br>Markdown 的粗体和斜体也非常简单，用两个 <em> 包含一段文本就是粗体的语法，用一个  </em> 包含一段文本就是斜体的语法。</p>
+<p>代码引用<br>需要引用代码时，如果引用的语句只有一段，不分行，可以用 ` 将语句包起来。<br>如果引用的语句为多行，可以将<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">代码引用的案例截图：利用</div></pre></td></tr></table></figure></p>
+<p>我要写hello world 就例如</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hello world!</div></pre></td></tr></table></figure>
+<p>目前知道这些就够用了哦！赶紧来联系联系吧！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;标题：用#号 &lt;/p&gt;
+&lt;p&gt;这是最为常用的格式，在平时常用的的文本编辑器中大多是这样实现的：输入文本、选中文本、设置标题格式。&lt;/p&gt;
+&lt;p&gt;列表&lt;br&gt;列表格式也很常用，在 Markdown 中，你只需要在文字前面加上 - 就可以了&lt;/p&gt;
+&lt;p&gt;在 Markdown 
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>学会低头，方能出头</title>
