@@ -7,13 +7,17 @@
 
     
 
-    <title>归档：2016/11 | </title>
+    <title>iOS中UITableView的详细使用 | </title>
     <meta name="author" content="climbertian">
+    
+    <meta name="description" content="##scorllView（滚动视图）的总结：几个常用属性：
+1.scrollView的contentSize是用户能滚动的整体大小，而scrollView的frame中的size是其窗口的大小，既用户每次能看见的大小。如果向scroll中添加图片，建议吧contentSize设置成跟图片大小一样。
+">
     
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    
+    <meta property="og:title" content="iOS中UITableView的详细使用"/>
     <meta property="og:site_name" content="漫步诗涵"/>
 
     
@@ -191,94 +195,117 @@
 
     <main>
         <div class="container main-container">
-    
-
-<nav class="page-nav hide-on-small-only">
+    <nav class="page-nav hide-on-small-only">
     <div class="nav-wrapper indigo">
-        <span class="breadcrumb">当前位置（归档）</span>
+        <span class="breadcrumb">当前位置（分类目录）</span>
+        
+            
+
         
 
         
     </div>
 </nav>
 
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>iOS中UITableView的详细使用</h1>
+    
 
 
-    <ul class="collapsible mt-0" data-collapsible="accordion">
+            </div>
+            <time class="pink-link-context" datetime="2016-11-23T09:16:57.000Z"><a href="/2016/11/23/iOS中UITableView的详细使用/">2016-11-23</a></time>
+
+            
+    <div class="tags-row">
         
+            <a href="/tags/技术/" class="chip pink lighten-1">技术</a>
         
-            <li>
-                <div class="collapsible-header active">
-                    <i class="fa fa-archive"></i>2016
-                </div>
-                <div class="collapsible-body">
-                    <div class="collection">
-                        
-                            <a href="/2016/11/23/iOS中UITableView的详细使用/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-11-23T09:16:57.000Z">2016-11-23</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                iOS中UITableView的详细使用
-                            </a>
-                        
-                            <a href="/2016/11/23/为生命骄傲/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-11-23T01:05:48.000Z">2016-11-23</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                为生命骄傲
-                            </a>
-                        
-                            <a href="/2016/11/23/青春在路上/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-11-23T00:59:31.000Z">2016-11-23</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                青春在路上
-                            </a>
-                        
-                            <a href="/2016/11/22/生命只有一次，奋斗的人生才会更精彩/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-11-22T03:37:35.000Z">2016-11-22</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                生命只有一次，奋斗的人生才会更精彩
-                            </a>
-                        
-                            <a href="/2016/11/22/点亮自己的心灯/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-11-22T02:54:42.000Z">2016-11-22</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                点亮自己的心灯
-                            </a>
-                        
-                            <a href="/2016/11/22/Markdown的使用/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-11-22T02:33:09.000Z">2016-11-22</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                Markdown的使用
-                            </a>
-                        
-                            <a href="/2016/11/22/学会低头，方能出头/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-11-22T02:12:53.000Z">2016-11-22</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                学会低头，方能出头
-                            </a>
-                        
-                            <a href="/2016/11/22/这是在2016年11月22日的一天/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-11-22T01:32:49.000Z">2016-11-22</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                这是在2016年11月22日的一天
-                            </a>
-                        
-                            <a href="/2016/11/21/new/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-11-21T09:58:25.000Z">2016-11-21</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                漫步诗涵
-                            </a>
-                        
-                            <a href="/2016/11/21/hello-world/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-11-21T08:47:57.000Z">2016-11-21</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                Hello World
-                            </a>
-                        
-                    </div>
-                </div>
-            </li>
-        
-    </ul>
+    </div>
+
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    
+</div>
+
+
+            <div class="entry pink-link-context">
+                <p>##scorllView（滚动视图）的总结：<br>几个常用属性：</p>
+<p>1.scrollView的contentSize是用户能滚动的整体大小，而scrollView的frame中的size是其窗口的大小，既用户每次能看见的大小。如果向scroll中添加图片，建议吧contentSize设置成跟图片大小一样。</p>
+<p>2.contentInset是内边距地设置，弹簧效果的关键词是bounces（bool变量），滚动条的关键词是indicator。</p>
+<p>3.缩放：这个需要代理来实现UIScrollViewDelegate，viewForZoomingInScrollView方法是返回一个UIViwe，以确认哪个视图需要放大缩小，常用Tag值来标记。放大系数的关键词是zoomscale。<br>还有一个比较常用搞得方法是scrollViewDidScroll（滚动视图发生滚动的时候）可以监滚动视图的偏移量contentOffset.x和contentOffset.y，两个不同方向的偏移量。</p>
+<p>##tableView的总结：</p>
+<p>###1.重用机制：</p>
+<p>当创建出tableView后，系统会生成一个NSMutableArray <em>visibaleCells和一个NSMutableDictnery </em>reusableTableCell，假定有100个cell（它们的类型一致）需要显示，而屏幕最大能显示10个，那么实际上只生成了11份cell的内存，而且这11个cell都有同一个重影标识符，当第11个cell完全显示出来的时候，第一个cell消失在屏幕中，cell1加入到reusaDictnery中，键是重用标识符，值是cell的内存首地址，由于只有一种类型的cell，所以可知整个字典最多只有一组键值对，如果tableView中有多种类型的cell，我们需要给不同类的cell设置不同的标识符，这样的话，字典中就会有多个键值对。cell11同时也会加入到visibaleCells的数组中，当继续往下滑，cell12会从重用字典中寻找跟他具有相同重用标识符的cell，由于字典中的cell1跟他具有同样的键，所以cell12会直接在cell1的基础上修改一下数据显示在屏幕上，并不会重新创建一份内存，同时cell2从屏幕中移除，cell2进入重用字典，由于cell1跟cell2有相同的键，所以cell1会从重用字典中移除，当然如果cell1跟cell2的键不一样，既他们有不同的重用标识符，则cell1不会被移除。</p>
+<p>###2.关于每一组中cell如何显示（tableView的重点难点）<br>首先有4种方法</p>
+<p>（1）老式方法</p>
+<p>首先是从重用字典中寻找是否有可重用的cell，然后用if进行判断，如果没有则自行创建cell，cell的风格，以及内部子视图可以根据需要在if中创建。代码示例如下：</p>
+<p>UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identify];</p>
+<p>cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identify];</p>
+<p>//if内写样式(Cell长什么样)<br>                    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;</p>
+<p>UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectZero];</p>
+<p> //规定:cell上的内容都必须加到cell的contentView中<br>[cell.contentView addSubview:imageView];</p>
+<p>[imageView mas_makeConstraints:^(MASConstraintMaker *make) {<br>                        make.width.height.equalTo(40);<br>                        make.centerY.equalTo(0);<br>                        make.right.equalTo(-20);<br>                    }];<br>                    imageView.tag = 1000;<br>                }</p>
+<p>//对于内容的设置,要写在if外</p>
+<p>cell.textLabel.text = @”账号管理”;</p>
+<p>UIImageView <em>imageView = (UIImageView </em>)[cell.contentView viewWithTag:1000];<br>                imageView.image = [UIImage imageNamed:@”aio_voiceChange_effect_2”];</p>
+<p>(2）老式方法</p>
+<p>首先是从重用字典中寻找是否有可重用的cell，然后用if进行判断，如果没有通过，则通过xib创建，代码示例如下：</p>
+<p> UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identify];<br>cell = [[NSBundle mainBundle] loadNibNamed:@”DaRenCell” owner:nil options:nil].firstObject;</p>
+<p>如果需要更改cell中数据，则需要在xib文件中给每个子视图设置好tag值，然后根据tag值找到对应的地址进行修改。</p>
+<p>（3）新式方法</p>
+<p>首先需要创建一个tableViewCell的类，用于管理cell具体显示内容，代码示例如下：</p>
+<p>-(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{<br>    self = [super initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:reuseIdentifier];<br>    if (self) {<br>        self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;<br>    }<br>    return self;<br>}</p>
+<p>可以看到，是重写初始化方法来达到自定义cell的目的，当然你也可以不创建类，那么在使用新式方法的时候，系统创建cell的风格是默认风格。<br>然后是需要在合适的位置注册该cell，代码示例如下：</p>
+<p>[_tableView registerClass:[RightDetailCell class] forCellReuseIdentifier:@”RDCell”];</p>
+<p>下面是使用该cell：</p>
+<p>RightDetailCell *cell = [tableView dequeueReusableCellWithIdentifier:@”RDCell” forIndexPath:indexPath];</p>
+<p>cell.textLabel.text = indexPath.row ? @”消息记录” : @”消息通知”;</p>
+<p>具体的过程叙述如下：<br>首先是去该tableView的重用字典中寻找是否有@“RDCell”的键，如果没有，则系统会自动创建cell，而创建cell是根据注册的信息来的，此处我们是让系统去用我们自定义的类来创建，而且创建的时候会把注册时候给的重用标识符传递到初始化方法中（可以看到初始化方法中带有一个reusableIdentifier的参数），所以创建出来的cell都被打上该重用标识符的烙印，以便下次使用，而cell得具体样式，会根据初始化方法中的代码进行塑造，如果是比较复杂的cell，那么需要在自定义类中声明属性，以便在使用该cell的时候根据需要修改。</p>
+<p>（4）新式方法</p>
+<p>同样需要创建一个类，同时也创建一个跟该类同名的xib文件，注册时候需要注意，是通过xib文件注册了，代码如下：</p>
+<p>[_tableView registerNib:[UINib nibWithNibName:@”LockCell” bundle:nil] forCellReuseIdentifier:@”LockCell”];</p>
+<p>cell的具体样式是根据xib中的布局来决定的，需要修改的子视图可以连线到该类的头文件中，以便在调用的时候更改数据。具体的过程跟新式方法1一样。</p>
+<p>###3.Cell的编辑模式</p>
+<p>（1）删除与添加<br>首先是需要让cell在编辑模式下能显示出能够删除跟添加的按钮，代码示例如下：<br>//规定某一行的编辑模式</p>
+<p>-(UITableViewCellEditingStyle)tableView:(UITableView <em>)tableView editingStyleForRowAtIndexPath:(NSIndexPath </em>)indexPath{<br>    if (indexPath.row == self.dataList.count - 1) {</p>
+<p>//最后一行被设置成添加模式</p>
+<p>  return UITableViewCellEditingStyleInsert;<br>    }</p>
+<p>//其他被设置删除模式</p>
+<p> return UITableViewCellEditingStyleDelete;<br>}</p>
+<p>这个方法是设置具体某一行能进入编辑模式：<br>//指定某一行是否可以编辑</p>
+<p>-(BOOL)tableView:(UITableView <em>)tableView canEditRowAtIndexPath:(NSIndexPath </em>)indexPath{<br>    //取巧: 0 是NO,  其他数字都是YES<br>    return indexPath.row;<br>}</p>
+<p>下面这个方法是设置tableView进入编辑模式：<br>    [_tableView setEditing:!_tableView.isEditing animated:YES];可以添加一个segmentedControl来控制编辑模式。</p>
+<p>下面这个方法是点击删除、添加按钮以后的数据跟UI操作：</p>
+<p>-(void)tableView:(UITableView <em>)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath </em>)indexPath{<br>    switch (editingStyle) {<br>        case UITableViewCellEditingStyleNone: {</p>
+<p>  break;<br>        }<br>        case UITableViewCellEditingStyleDelete: {<br>            //删除操作触发<br>            //因为界面是根据数据来显示内容的, 所以删除时, 必须先删除数据, 再更新界面.<br>            [self.dataList removeObjectAtIndex:indexPath.row];<br>            [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];<br>            break;<br>        }</p>
+<p> case UITableViewCellEditingStyleInsert: {<br>            [self.dataList addObject:@”达内教育”];</p>
+<p> //最后一行的位置</p>
+<p>   NSIndexPath *ip = [NSIndexPath indexPathForRow:self.dataList.count - 1 inSection:0];</p>
+<p> //第二参数的效果, 自己下课测试</p>
+<p> [tableView insertRowsAtIndexPaths:@[ip] withRowAnimation:UITableViewRowAnimationAutomatic];<br>            break;<br>        }<br>    }<br>}</p>
+<p>整个添加删除的过程到此才结束。</p>
+<p>#总结一下：<br>首先通过按钮等控制整个tableView能够进入编辑模式，有一个方法可以规定具体哪些cell可以进入编辑模式，canEditRowAtIndexPath<br>。<br>进入编辑模式后，cell上具体显示的是什么编辑状态，需要用到editingStyleForRowAtIndexPath方法，值得注意的是删除按钮跟添加按钮不能同时出现。<br>最后是对编辑按钮进行实际的改写，否则只是有按钮，并不会出现删除跟添加的实际操作。这时候需要用到commitEditingStyle方法，具体的删除跟添加遵循的原则是操作数据，然后操作UI。</p>
+<p>（2）移动操作<br>同样是需要一个返回bool的方法判断哪行可以出现移动图标：canMoveRowAtIndexPath这个方法是单独控制某一行是否出现移动图标，当然canEditRowAtIndexPath这个方法是比它权利更大。<br>然后是具体的移动了，然后是具体的操作了，它单独是一个方法，跟添加删除是独立的，代码示例如下：</p>
+<ul>
+<li>(void)tableView:(UITableView <em>)tableView moveRowAtIndexPath:(NSIndexPath </em>)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath{<br>  //移动UI的同时, 对数据项进行同步的修改<br>  //1.获取正在移动的数据<br>  id obj = self.dataList[sourceIndexPath.row];<br>  //2.把数据从原来位置删除<br>  [self.dataList removeObject:obj];<br>  //3.把数据插入到新的位置<br>  [self.dataList insertObject:obj atIndex:destinationIndexPath.row];<br>}<br>由代码可以看到我们只是操作了数据，并没有操作UI。</li>
+</ul>
+<p>##4.关于表头表尾、组头组尾<br>表头表尾是整个tableView的，而且只有一个表头一个表尾，而且表头表尾不能共用一个UIView，要分开写。<br>而组头组尾相对来说就要复杂一些，因为tableView可能会有很多个section，这个就涉及到重用机制了，需要创建一个tableView组头组尾专属的类来管理，并在类的初始化方法中根据需要改写，同时在使用之前也是要注册的，也涉及到重用标识符，跟cell的一模一样。值得一提的是如果组头组尾是UIView，如果需要接收点击事件，可以根据需要添加一个UIControl在视图中。</p>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
 
 
 </div>
