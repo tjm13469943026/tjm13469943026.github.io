@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-11-23T09:45:20.000Z</updated>
+  <updated>2016-11-23T10:13:11.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,66 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MacDown语法小结</title>
+    <link href="http://yoursite.com/2016/11/23/MacDown%E8%AF%AD%E6%B3%95%E5%B0%8F%E7%BB%93/"/>
+    <id>http://yoursite.com/2016/11/23/MacDown语法小结/</id>
+    <published>2016-11-23T09:52:19.000Z</published>
+    <updated>2016-11-23T10:13:11.000Z</updated>
+    
+    <content type="html"><![CDATA[<!-- 这是注释 -->
+<p>#测试字体h1</p>
+<p>##1.1测试字体，测试字体h2</p>
+<p>本段为正文，本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文，<a href="#testld">本页面跳转</a>、<a href="https://www.baidu.com" target="_blank" rel="external">本页面跳转百度</a>.</p>
+<h3><br><a href="anydoor_domo_ios_0821.zip" target="_blank" class="color">2。下载链接</a><br></h3>
+
+<p>###4.列表</p>
+<ul>
+<li>1（注意中间有空格）</li>
+<li>2</li>
+</ul>
+<p>###有序列表</p>
+<ol>
+<li>（注意中间有空格）</li>
+<li></li>
+<li></li>
+</ol>
+<p>###连线</p>
+<ul>
+<li>1</li>
+<li>2</li>
+<li>3 </li>
+</ul>
+<p>&gt;</p>
+<blockquote>
+<h4 id="和上面连在一起"><a href="#和上面连在一起" class="headerlink" title="和上面连在一起"></a>和上面连在一起</h4><p>*</p>
+</blockquote>
+<p>###表格</p>
+<table><br><tr><br><td> 第一行第一列 </td><br><td> 第一行第二列 </td><br></tr><br><br><tr><br><td>第二行第一列 </td><br><td> 第二行第二列 </td><br></tr><br><br></table>
+
+
+<h2 id="testId">持续更新中</h2>
+
+
+
+
+<hr>
+<center>©文字居中</center>]]></content>
+    
+    <summary type="html">
+    
+      &lt;!-- 这是注释 --&gt;
+&lt;p&gt;#测试字体h1&lt;/p&gt;
+&lt;p&gt;##1.1测试字体，测试字体h2&lt;/p&gt;
+&lt;p&gt;本段为正文，本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为正文本段为
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>iOS中UITableView的详细使用</title>
